@@ -22,3 +22,17 @@ This project automatically fetches the latest tech/AI news using Tavily, summari
 - A [LinkedIn Developer App](https://www.linkedin.com/developers/apps)
 
 ---
+
+## Server
+
+```uvicorn news_poster:app --reload```
+
+Visit http://localhost:8000/fetch to fetch and queue the latest news.
+
+Then go to http://localhost:8000/review to:
+
+View generated LinkedIn posts
+
+Approve or reject each post manually
+
+Once approved, the post is automatically published to LinkedIn.
